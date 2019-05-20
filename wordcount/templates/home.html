@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Wordcount</title>
+<style>
+
+#title {
+    font-size: 100px;
+    font-family: Georgia;
+    font-style: italic;
+    padding: 20px;
+}
+
+h1 {
+    color :orange;
+    font-size: 300%;
+    background-position :center;
+}
+
+
+
+body {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    font-family:'나눔명조';
+}
+
+input[type=submit] {
+    padding:5px 15px; 
+    background: orange; 
+    font-color:white;
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}
+
+
+textarea::placeholder {
+    color : gray;
+    font-style :italic;
+    font-size: 120%;
+    padding : 10px;
+}
+
+.me {
+    border-right : 3px solid orange;
+    border-left : 3px solid orange;
+    padding-bottom : 80px;
+    padding-top : 30px;
+    margin : 10px 400px 10px 400px;
+}
+
+
+</style>
+</head>
+<body>
+<div class="me">
+<h1 id="title">LIKELION</h1> 
+<h1> 멋쟁이 사자처럼 글자수 세기 </h1>
+<p style="font-size:120%"><i>안녕하세요. 아래 입력란에 글을 작성하시면 단어 수를 세드립니다. </i></p>
+
+    <a href="{%url 'about'%}" style="color:orange; padding-bottom:50px;"> ABOUT </a>
+
+<form action="{%url 'result'%}">
+    <textarea  placeholder="이 곳에 글을 작성하세요."
+    cols="80" rows="15" name="fulltext" 
+    style="border-color: black; border-style:outset " ></textarea>
+    <br>
+    <input  type="submit" value ="COUNT" style="margin:10px">
+</form>
+
+</div>
+</body>
+
+</html>
