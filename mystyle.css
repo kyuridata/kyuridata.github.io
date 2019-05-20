@@ -1,0 +1,164 @@
+/* Animation 
+@keyframes rolling {
+    0% {
+        transform : translateY(0);
+    }
+    25% {
+        transform : translateY(-20%);
+    }
+    50% {
+        transform : translateY(-40%);
+    }
+    75% {
+        transform : translateY(-60%);
+    }
+    100%{
+        transform : translateY(-80%);
+    }
+}
+
+*/
+
+/* css reset */
+body,h1,p,ul {
+    margin : 0;
+    padding : 0;
+}
+
+li {
+    list-style-type:  none;
+}
+
+h1 {
+    font-size : 100%;
+    font-weight: normal;
+}
+
+a {
+   color : inherit;
+   text-decoration: none; /*링크 밑줄*/  
+}
+
+body {
+    background-color : #111;
+    color : #999;
+
+}
+
+.portrait {
+    background-image: url(images/Craft-beer.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-top: 56.25%;  /* 16:9 비율 */
+}
+
+.profile {
+    padding : 5%;
+}
+
+
+.info-section {
+    background-color: orange;
+    padding: 15%;
+    
+}
+
+.info {
+    float: left;
+    width: 33%; 
+    padding:10px
+}
+
+.profile-section {
+    border-top : 3px solid orange;
+    border-bottom : 3px solid orange;
+    width: 1506px;
+    /* height: 306px; */
+
+}
+
+.profile-header {
+    padding-top :5%;
+    padding-bottom : 5%;
+}
+
+.name {
+    font-size: 30px;
+    line-height: 1.5; /*줄간격을 설정하게 되면 name-job에서 간격을 맞출 수 있게 됨 */
+    font-style : italic;
+    font-family: 'Inconsolata', monospace;
+    padding : 30px;
+}
+
+.name-job {
+    display: inline-block;
+    color: white;
+    vertical-align: top;
+    height : 1.5em;
+    overflow : hidden;
+}
+
+
+.name-title {
+    font-size: 4em;  /*부모 노드가 넘어가서(name) 의 1.3배가 됨*/
+    line-height: 1;
+    font-family: 'Baloo Chettan', cursive;
+    color : orange
+}
+
+.explain {
+    padding-left : 30px;
+    font-family: 'Baloo Chettan', cursive;
+    font-size : 40px;
+}
+
+.s1 {
+    display: inline-block;
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    background-color: orange;
+    margin : 30px;
+    padding-left : 30px;
+}    
+    
+.contents {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-size : 20px;
+    color : white;
+    padding : 20px;
+    padding-top : 110px;
+    font-size : 2em;
+    
+}
+
+
+.info-name {
+    font-family: 'Baloo Chettan';
+    font-size: 3em;
+    padding : 20px;
+    
+}
+
+.summary {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding : 30px;
+    line-height: 40px;
+    font-size : 1.5em;
+}
+
+.contact { 
+    font-family: 'Baloo Chettan';
+    font-size: 3em;
+    padding : 20px;
+}
+
+.contact-info {
+    font-size: 30px;
+    line-height: 1.5; /*줄간격을 설정하게 되면 name-job에서 간격을 맞출 수 있게 됨 */
+    font-style : italic;
+    font-family: 'Inconsolata', monospace;
+    padding : 30px;
+}
